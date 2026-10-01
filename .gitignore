@@ -1,0 +1,14 @@
+node_modules/
+.cubestore/
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated Cube models
+cubecore/cube_models/*.yml
+
+# Local development files
+.DS_Store
+*.log

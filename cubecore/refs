@@ -1,0 +1,12 @@
+cd C:\Users\ogera\openmetadata
+docker compose up -d
+8585.
+
+
+
+docker run -d --name sample-postgres -p 5433:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=dvdrental postgres:latest
+
+
+
+
+Username   postgresReplace your email address with the database user postgres.   Host and Port   host.docker.internal:5433Connects from the OpenMetadata Docker container to your host machine's port 5433.Database   dvdrentalThe database created inside the PostgreSQL container.Auth Configuration Type   Basic Auth (already selected)   Keep as default.   Password   passwordThe superuser password configured for the container.

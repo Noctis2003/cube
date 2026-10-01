@@ -1,0 +1,24 @@
+cubes:
+  - name: raw_transactions
+    sql_table: public.raw_transactions
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: amount
+        sql: amount
+        type: string
+
+      - name: txn_date
+        sql: txn_date
+        type: time
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://docs.cube.dev/docs/pre-aggregations/getting-started-pre-aggregations
+

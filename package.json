@@ -1,0 +1,17 @@
+{
+  "name": "cube-analytics-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "cubecore",
+    "cubecoreai",
+    "dvdrental-cube"
+  ],
+  "scripts": {
+    "cube:dev": "npm run dev --workspace=dvdrental-cube",
+    "core:generate": "npm run generate --workspace=cubecore",
+    "ai:chat": "npm run start --workspace=cubecoreai",
+    "docker:up": "docker compose -f dvdrental-cube/docker-compose.yml up",
+    "docker:down": "docker compose -f dvdrental-cube/docker-compose.yml down"
+  }
+}

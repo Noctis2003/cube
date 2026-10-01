@@ -1,0 +1,28 @@
+cubes:
+  - name: v_customer_revenue_summary
+    sql_table: public.v_customer_revenue_summary
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: full_name
+        sql: full_name
+        type: string
+
+      - name: tier
+        sql: tier
+        type: string
+
+      - name: total_spend
+        sql: total_spend
+        type: string
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://docs.cube.dev/docs/pre-aggregations/getting-started-pre-aggregations
+

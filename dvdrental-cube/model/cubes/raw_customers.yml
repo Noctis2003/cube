@@ -1,0 +1,28 @@
+cubes:
+  - name: raw_customers
+    sql_table: public.raw_customers
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: email
+        sql: email
+        type: string
+
+      - name: full_name
+        sql: full_name
+        type: string
+
+      - name: tier
+        sql: tier
+        type: string
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://docs.cube.dev/docs/pre-aggregations/getting-started-pre-aggregations
+

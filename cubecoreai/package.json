@@ -1,0 +1,8 @@
+{
+  "name": "@cube-analytics/cubecoreai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "python main.py"
+  }
+}
